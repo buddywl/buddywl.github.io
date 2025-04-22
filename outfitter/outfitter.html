@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Darumadrop One">
+
+    <script src="src.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <title>ARS162: Buddy Luong</title>
+</head>
+<body>
+<div class="person">
+
+</div>
+<div id="container" class="container">
+
+    <div class="closet">
+        <div class="accessory hat">
+
+        </div>
+        <div id="shirts" class="clothes shirt">
+            <button onclick="back('shirt')">
+                Previous
+            </button>
+            <img id="shirt" src="closet/shirt/1.png" alt="tomato shirt">
+            <button onclick="next('shirt')">
+                Next
+            </button>
+        </div>
+        <div id="pantss" class="clothes pants">
+            <button onclick="back('pants')">
+                Previous
+            </button>
+            <img src="closet/pants/1.png" alt="jorts">
+            <button onclick="next('pants')">
+                Next
+            </button>
+        </div>
+        <div class="accessory shoes">
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

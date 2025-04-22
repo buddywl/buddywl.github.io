@@ -1,0 +1,68 @@
+/*CSS STYLE GUIDE {
+   P
+      (position
+       display
+       margin
+       left, right, top, bottom
+       transform)
+
+   SIZING
+      (width
+       height)
+
+   STYLING
+       (background-color
+        opacity)
+
+}*/
+body {
+    margin: 0;
+}
+
+#container{
+    /*position: absolute;*/
+    /*display: inline-block;*/
+
+    width: 100vw;
+    height: 100vh;
+
+    /*background-color: red;*/
+}
+
+.closet {
+    position: absolute;
+    display: block;
+    left: 50vw;
+    margin: 0 auto;
+    transform: translateX(-50%);
+
+    width: 30vw;
+    height: fit-content;
+
+    background-color: hotpink;
+
+}
+
+.clothes img{
+    position: relative;
+
+    width: 100%;
+    height: auto;
+}
+
+button{
+    z-index:20;
+    position: absolute;
+}
+
+.pants {
+
+}
+
+img {
+    z-index: 10;
+}
+
+#bArrow{
+    transform: rotateY(-180deg);
+}
