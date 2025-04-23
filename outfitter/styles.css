@@ -13,10 +13,10 @@
    STYLING
        (background-color
         opacity)
-
 }*/
 body {
     margin: 0;
+    background-image: url("../greenGrid.jpg");
 }
 
 #container{
@@ -36,11 +36,31 @@ body {
     margin: 0 auto;
     transform: translateX(-50%);
 
-    width: 30vw;
-    height: fit-content;
+    width: 20vw;
+    height: 100vh;
+    /*max-height: 100vh;*/
 
     background-color: hotpink;
+}
 
+.shirts{
+    background-color: red;
+    height: fit-content;
+    width: 100%;
+}
+.pantss {
+    background-color: white;
+    height: fit-content;
+    width: 100%;
+}
+
+.hat img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 40%;
+    height: auto;
 }
 
 .clothes img{
@@ -52,7 +72,17 @@ body {
 
 button{
     z-index:20;
-    position: absolute;
+    position: relative;
+
+    font-family: "Darumadrop One", monospace;
+}
+.changer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    padding-bottom: 2em;
 }
 
 .pants {
@@ -65,4 +95,37 @@ img {
 
 #bArrow{
     transform: rotateY(-180deg);
+}
+
+.icon {
+    width: 100px;
+}
+
+
+
+
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #B2BD8C;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+
+    font-family: "Darumadrop One", monospace;
+
+    width: 400px;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #B2BD8C;
+    border: 2px solid white;
+
+
+    font-family: "Darumadrop One", monospace;
+
+
+    color: black;
 }

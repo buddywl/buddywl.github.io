@@ -16,6 +16,39 @@
     <title>ARS162: Buddy Luong</title>
 </head>
 <body>
+<!-- Draggable DIV -->
+<div id="mydiv">
+    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+    <div id="mydivheader">Closet Control Panel</div>
+    <div class="hat_changer changer">
+        <button onclick="back('hat')">
+            Previous
+        </button>
+        <img class="icon" src="closet/hat/1.png" alt="hat">
+        <button onclick="next('hat')">
+            Next
+        </button>
+    </div>
+    <div class="shirt_changer changer">
+        <button onclick="back('shirt')">
+            Previous
+        </button>
+        <img class="icon" src="closet/shirt/1.png" alt="tomato shirt">
+        <button onclick="next('shirt')">
+            Next
+        </button>
+    </div>
+    <div class="pants_changer changer">
+        <button onclick="back('pants')">
+            Previous
+        </button>
+        <img class="icon" src="closet/pants/1.png" alt="pants-icon">
+        <button onclick="next('pants')">
+            Next
+        </button>
+    </div>
+</div>
+
 <div class="person">
 
 </div>
@@ -23,25 +56,13 @@
 
     <div class="closet">
         <div class="accessory hat">
-
+            <img id="hat" src="closet/hat/1.png" alt="sox hat">
         </div>
         <div id="shirts" class="clothes shirt">
-            <button onclick="back('shirt')">
-                Previous
-            </button>
             <img id="shirt" src="closet/shirt/1.png" alt="tomato shirt">
-            <button onclick="next('shirt')">
-                Next
-            </button>
         </div>
         <div id="pantss" class="clothes pants">
-            <button onclick="back('pants')">
-                Previous
-            </button>
             <img src="closet/pants/1.png" alt="jorts">
-            <button onclick="next('pants')">
-                Next
-            </button>
         </div>
         <div class="accessory shoes">
 
