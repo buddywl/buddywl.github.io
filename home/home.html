@@ -5,23 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="../parentStyles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Darumadrop One">
+
 
     <script src="src.js" defer></script>
 
     <title>ARS162: Buddy Luong</title>
 </head>
+<!--<header>-->
+<!--    <button id="home">-->
+<!--        <img src="../elements/icons/house.png" onclick="location.href='home.html'" class="home-btn" alt="about">-->
+<!--    </button>-->
+<!--</header>-->
 <body>
-    <div class="home">
-        <h1>
-            Don't know what to wear today?
-        </h1>
-        <button>
-            Click to enter into the oufit creator
-        </button>
+<div class="menu">
+    <button id="closet">
+        <img src="../elements/icons/closet.png" onclick="location.href='../closet/closet.html'" class="menu-btn" alt="closet">
+    </button>
+
+    <button id="hat">
+        <img src="../elements/icons/saved.png" onclick="location.href='../saved/saved.html'" class="menu-btn" alt="saved">
+    </button>
+
+    <img class="title" src="../elements/titles/outfitPicker_outlined.png" alt="ARS162">
+
+    <button id="about">
+        <img src="../elements/icons/about.png" onclick="location.href='../about/about.html'" class="menu-btn" alt="about">
+    </button>
+
+    <button id="shoes">
+        <img src="../elements/icons/shoes_crop.png" class="menu-btn" alt="shoes">
+    </button>
+
+</div>
+
+<!--<div class="trailcontainer">-->
+<!--    <img class="trail" src="../elements/icons/shirt.png" alt="shirt-icon">-->
+<!--    <img class="trail" src="../elements/icons/shirt.png" alt="shirt-icon">-->
+<!--    <img class="trail" src="../elements/icons/pants.png" alt="pants-icon">-->
+<!--    <img class="trail" src="../elements/icons/hat_crop.png" alt="hat-icon">-->
+<!--    <img class="trail" src="../elements/icons/shoes_crop.png" alt="shoe-icon">-->
+<!--    <img class="trail" src="../elements/icons/shirt.png" alt="shirt-icon">-->
+<!--    <img class="trail" src="../elements/icons/hat_crop.png" alt="hat-icon">-->
+<!--    <img class="trail" src="../elements/icons/pants.png" alt="pants-icon">-->
+<!--    <img class="trail" src="../elements/icons/shoes_crop.png" alt="shoe-icon">-->
+<!--    <img class="trail" src="../elements/icons/shoes_crop.png" alt="shoe-icon">-->
+<!--    <img class="trail" src="../elements/icons/hat_crop.png" alt="hat-icon">-->
+<!--    <img class="trail" src="../elements/icons/pants.png" alt="pants-icon">-->
+<!--    <img class="trail" src="../elements/icons/shoes_crop.png" alt="shoe-icon">-->
+<!--    <img class="trail" src="../elements/icons/hat_crop.png" alt="hat-icon">-->
+<!--    <img class="trail" src="../elements/icons/shoes_crop.png" alt="shoe-icon">-->
+<!--    <img class="trail" src="../elements/icons/hat_crop.png" alt="hat-icon">-->
+<!--    <img class="trail" src="../elements/icons/shoes_crop.png" alt="shoe-icon">-->
+<!--    <img class="trail" src="../elements/icons/shirt.png" alt="shirt-icon">-->
+<!--    <img class="trail" src="../elements/icons/hat_crop.png" alt="hat-icon">-->
+<!--    <img class="trail" src="../elements/icons/pants.png" alt="pants-icon">-->
+<!--    <img class="trail" src="../elements/icons/shoes_crop.png" alt="shoe-icon">-->
+<!--    <img class="trail" src="../elements/icons/shirt.png" alt="shirt-icon">-->
+<!--    <img class="trail" src="../elements/icons/shirt.png" alt="shirt-icon">-->
+<!--    <img class="trail" src="../elements/icons/hat_crop.png" alt="hat-icon">-->
+<!--    <img class="trail" src="../elements/icons/pants.png" alt="pants-icon">-->
+<!--    <img class="trail" src="../elements/icons/shoes_crop.png" alt="shoe-icon">-->
+<!--    <img class="trail" src="../elements/icons/shirt.png" alt="shirt-icon">-->
+<!--    <img class="trail" src="../elements/icons/shoes_crop.png" alt="shoe-icon">-->
+<!--    <img class="trail" src="../elements/icons/shoes_crop.png" alt="shoe-icon">-->
+<!--    <img class="trail" src="../elements/icons/pants.png" alt="pants-icon">-->
+<!--    <img class="trail" src="../elements/icons/shoes_crop.png" alt="shoe-icon">-->
+<!--    <img class="trail" src="../elements/icons/pants.png" alt="pants-icon">-->
+<!--</div>-->
+
+<div class="home">
+    <div class="thought">
+        <img src="../elements/icons/thoughtBubble.png" alt="thought-bubble" class="bubble" id="bubble">
+    </div>
+<!--    <h1>-->
+<!--        Don't know what to wear today?-->
+<!--    </h1>-->
+<!--    <button>-->
+<!--        Click to enter into the oufit creator-->
+<!--    </button>-->
+
+    <div class="image" onmouseover="bubble()" onmouseout="noBubble()">
+        <img src="../elements/icons/section.png" alt="section" class="section" onmouseover="bubble()" onmouseout="noBubble()" onclick="location.href='../outfitter/outfitter.html'" id="section">
+    </div>
+
+    <div class="text">
 
     </div>
+
+</div>
 </body>
 </html>

@@ -1,0 +1,30 @@
+body{
+    /*background-image: url("../greenGrid.jpg");*/
+}
+
+.title{
+    width: 30vw;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.text{
+    position: absolute;
+    background-image: url("../greenGrid.jpg");
+    padding: 1em;
+    color: black;
+    width: 75%;
+    height: 60vh;
+
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p {
+    font-size: 2em;
+    font-family: "Monospac821 BT", monospace;
+}
+
+

@@ -1,0 +1,41 @@
+html{
+    overflow-x: hidden;
+    overflow-y: auto;
+    cursor: cell
+}
+
+header{
+    height: 15vh;
+    position: sticky;
+    z-index: 999;
+
+}
+.home-btn {
+    position: absolute;
+    left:10px;
+    top:10px;
+    z-index: 999;
+
+
+    height: 75px;
+    width: auto;
+}
+
+
+body {
+    margin: 0;
+    padding: 10px;
+    /*background-image: url("../greenGrid.jpg");*/
+    background-color: pink;
+}
+
+
+button {
+    z-index: 20;
+    position: relative;
+
+    border: none;
+    background-color: rgba(255, 255, 255, 0%);
+    font-family: "Darumadrop One", monospace;
+    cursor: pointer;
+}

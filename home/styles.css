@@ -1,3 +1,75 @@
-.h1{
+.home-btn {
+    position: absolute;
+    left:10px;
+    top:10px;
+    z-index: 999;
+
+
+    height: 75px;
+    width: auto;
+}
+
+.title{
+    width: 35vw;
+}
+
+
+.menu {
+    position: sticky;
+    display: inline-flex;
+    z-index: 999;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+}
+
+.menu-btn{
+    width: 8vw;
+}
+
+h1{
+    font-family: "Darumadrop One", monospace;
+}
+
+
+
+
+
+.trailcontainer {
+    width: 95%;
+    height: 93vh;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+
+}
+
+.trail{
+    width: 100px;
+    position: absolute;
+    display: none;
+    transform: translate(-50%, -50%);
+}
+
+.section{
+    position: absolute;
+    height: 30vw;
+    top: 40vh;
+    z-index: 100;
+    cursor:pointer;
+}
+
+.bubble{
+    position: absolute;
+    z-index: 999;
+    left: 50vw;
+
+    width: 30vw;
+    display: none;
+}
+
+.text{
 
 }

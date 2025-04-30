@@ -1,0 +1,56 @@
+.title{
+    width: 35vw;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+.container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+    padding: 5em;
+}
+
+.subtitle{
+    position: relative;
+    height: 10vh;
+    width: 100%;
+
+    /*background-color: #B2BD8C;*/
+}
+
+.subtitle img{
+    position: absolute;
+    height: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section{
+    min-height: 200px;
+    /*background-color: #B2BD8C;*/
+    /*padding: 10px;*/
+    background-image: url("../greenGrid.jpg");
+
+}
+.spacer{
+    height: 10vh;
+
+    background-color: pink;
+}
+
+.closet {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.closet img{
+    width: 300px;
+}

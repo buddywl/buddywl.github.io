@@ -1,0 +1,22 @@
+.spacer{
+    height: 10vh;
+
+    background-color: pink;
+}
+.title{
+    width: 30vw;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    width: 90%;
+    padding: 5em;
+}

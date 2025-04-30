@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="../parentStyles.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Darumadrop One">
+
+
+    <script src="src.js" defer></script>
+
+    <title>ARS162: Buddy Luong</title>
+</head>
+<header>
+    <button id="home">
+        <img src="../elements/icons/house.png" onclick="location.href='../home/home.html'" class="home-btn" alt="about">
+    </button>
+
+    <img src="../elements/titles/closetTitle.png" class="title" alt="closet">
+</header>
+<body>
+<!--<div class="spacer"></div>-->
+<div class="container">
+    <div class="section hats">
+        <div class="subtitle">
+            <img src="../elements/clothes/hat/hats.png" alt="hats">
+        </div>
+        <div class="closet" id="hat" onload="fillCloset('hat', 5)">
+            <img src="../elements/clothes/hat/1.png" alt="hat">
+            <img src="../elements/clothes/hat/2.png" alt="hat">
+            <img src="../elements/clothes/hat/3.png" alt="hat">
+            <img src="../elements/clothes/hat/4.png" alt="hat">
+            <img src="../elements/clothes/hat/5.png" alt="hat">
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="section shirts">
+        <div class="subtitle">
+            <img src="../elements/clothes/shirt/shirts.png" alt="shirts">
+        </div>
+        <div class="closet" id="shirt" onload="fillCloset('shirt', 5)">
+            <img src="../elements/clothes/shirt/1.png" alt="shirts">
+            <img src="../elements/clothes/shirt/2.png" alt="shirts">
+            <img src="../elements/clothes/shirt/3.png" alt="shirts">
+            <img src="../elements/clothes/shirt/5.png" alt="shirts">
+            <img src="../elements/clothes/shirt/4.png" alt="shirts">
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="section pants">
+        <div class="subtitle">
+            <img src="../elements/clothes/pants/pants.png" alt="pants">
+        </div>
+        <div class="closet" id="pants" onload="fillCloset('pants', 5)">
+            <img src="../elements/clothes/pants/1.png" alt="pants">
+            <img src="../elements/clothes/pants/2.png" alt="pants">
+            <img src="../elements/clothes/pants/3.png" alt="pants">
+            <img src="../elements/clothes/pants/4.png" alt="pants">
+            <img src="../elements/clothes/pants/5.png" alt="pants">
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="section shoes">
+        <div class="subtitle">
+            <img src="../elements/clothes/shoes/shoes.png" alt="shoes">
+        </div>
+        <div class="closet" id="shoes" onload="fillCloset('shoes', 0)">
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

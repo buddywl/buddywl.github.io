@@ -4,65 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="../parentStyles.css" />
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Darumadrop One">
 
     <script src="src.js" defer></script>
+<!--    <script src="../save.js" defer></script>-->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 
     <title>ARS162: Buddy Luong</title>
 </head>
+<header>
+    <button id="home">
+        <img src="../elements/icons/house.png" onclick="location.href='../home/home.html'" class="home-btn" alt="about">
+    </button>
+
+    <img src="../elements/titles/outfitter.png" class="title" alt="closet">
+</header>
 <body>
 <!-- Draggable DIV -->
 <div id="mydiv">
     <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-    <div id="mydivheader">Closet Control Panel</div>
+    <div id="mydivheader"><img class="control-panel" src="../elements/titles/controlPanel.png" alt="control panel"></div>
     <div class="hat_changer changer">
-        <button onclick="back('hat')">
-            Previous
+        <button onclick="back('hat', 5)">
+            <img class="arrow" src="../elements/icons/bArrow.png" alt="back">
         </button>
-        <img class="icon" src="closet/hat/1.png" alt="hat">
-        <button onclick="next('hat')">
-            Next
+        <img class="icon" src="../elements/icons/hat.png" alt="hat">
+        <button onclick="next('hat', 5)">
+            <img class="arrow" src="../elements/icons/nArrow.png" alt="next">
         </button>
     </div>
+
     <div class="shirt_changer changer">
-        <button onclick="back('shirt')">
-            Previous
+        <button onclick="back('shirt', 5)">
+            <img class="arrow" src="../elements/icons/bArrow.png" alt="back">
         </button>
-        <img class="icon" src="closet/shirt/1.png" alt="tomato shirt">
-        <button onclick="next('shirt')">
-            Next
+        <img class="icon" src="../elements/icons/shirt.png" alt="shirt-icon">
+        <button onclick="next('shirt', 5)">
+            <img class="arrow" src="../elements/icons/nArrow.png" alt="next">
         </button>
     </div>
+
     <div class="pants_changer changer">
-        <button onclick="back('pants')">
-            Previous
+        <button onclick="back('pants', 5)" >
+            <img class="arrow" src="../elements/icons/bArrow.png" alt="back">
         </button>
-        <img class="icon" src="closet/pants/1.png" alt="pants-icon">
-        <button onclick="next('pants')">
-            Next
+        <img class="icon" src="../elements/icons/pants.png" alt="pants-icon">
+        <button onclick="next('pants', 5)">
+            <img class="arrow" src="../elements/icons/nArrow.png" alt="next">
+        </button>
+    </div>
+
+    <div class="shoe_changer changer">
+        <button onclick="back('shoes')">
+            <img class="arrow" src="../elements/icons/bArrow.png" alt="back">
+        </button>
+        <img class="icon" src="../elements/icons/shoes.png" alt="shoe-icon">
+        <button onclick="next('shoes')">
+            <img class="arrow" src="../elements/icons/nArrow.png" alt="next">
         </button>
     </div>
 </div>
 
-<div class="person">
-
-</div>
+<!--<div class="person">-->
+<!--    <div class="spacer"></div>-->
+<!--    <img src="../elements/icons/person.png" alt="person">-->
+<!--</div>-->
 <div id="container" class="container">
+    <div class="bg"></div>
 
     <div class="closet">
         <div class="accessory hat">
-            <img id="hat" src="closet/hat/1.png" alt="sox hat">
+            <img id="hat" src="../elements/clothes/hat/1.png" alt="sox hat">
         </div>
+        <div class="spacer"></div>
         <div id="shirts" class="clothes shirt">
-            <img id="shirt" src="closet/shirt/1.png" alt="tomato shirt">
+            <img id="shirt" src="../elements/clothes/shirt/1.png" alt="tomato shirt">
         </div>
         <div id="pantss" class="clothes pants">
-            <img src="closet/pants/1.png" alt="jorts">
+            <img src="../elements/clothes/pants/1.png" alt="jorts">
         </div>
         <div class="accessory shoes">
 

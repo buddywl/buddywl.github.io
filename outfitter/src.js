@@ -3,8 +3,8 @@
 
 let curShirt = 1;
 let curPants = 1;
-const maxClothes = 2;
-function next(id){
+let curHat = 1;
+function next(id, maxClothes){
     let cur = document.getElementById(id);
     if (id === 'shirt') {
         if (curShirt < maxClothes) {
@@ -12,7 +12,7 @@ function next(id){
         } else {
             curShirt = 1;
         }
-        cur.src = "closet/" + id + "/" + curShirt + ".png"
+        cur.src = "../elements/clothes/" + id + "/" + curShirt + ".png"
 
     } else if (id === 'pants') {
         if (curPants < maxClothes){
@@ -20,28 +20,42 @@ function next(id){
         } else {
             curPants = 1;
         }
-        cur.src = "closet/" + id + "/" + curPants + ".png"
+        cur.src = "../elements/clothes/" + id + "/" + curPants + ".png"
+
+    } else if (id === 'hat') {
+        if (curHat < maxClothes){
+            curHat++;
+        } else {
+            curHat = 1;
+        }
+        cur.src = "../elements/clothes/" + id + "/" + curHat + ".png"
     }
 }
 
-function back(id){
+function back(id, maxClothes){
     let cur = document.getElementById(id);
+
     if (id === 'shirt'){
         if(curShirt > 1){
             curShirt--;
         } else {
             curShirt = maxClothes;
         }
-        cur.src = "closet/" + id + "/" + curShirt + ".png"
-
+        cur.src = "../elements/clothes/" + id + "/" + curShirt + ".png"
     } else if (id === 'pants'){
         if(curPants > 1){
             curPants--;
         } else {
             curPants = maxClothes;
         }
-        cur.src = "closet/" + id + "/" + curPants + ".png"
-
+        cur.src = "../elements/clothes/" + id + "/" + curPants + ".png"
+    } else if (id === 'hat') {
+        if (curHat > 1) {
+            curHat--;
+        } else {
+            curHat = maxClothes;
+        }
+        cur.src = "../elements/clothes/" + id + "/" + curHat + ".png"
     }
 }
 
