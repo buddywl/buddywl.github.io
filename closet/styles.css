@@ -32,13 +32,15 @@
     min-height: 200px;
     /*background-color: #B2BD8C;*/
     /*padding: 10px;*/
-    background-image: url("../greenGrid.jpg");
+    /*background-image: url("../greenGrid.jpg");*/
+    background-color: pink;
 
 }
 .spacer{
     height: 10vh;
+    background-image: url("../greenGrid.jpg");
 
-    background-color: pink;
+    /*background-color: pink;*/
 }
 
 .closet {
