@@ -129,6 +129,6 @@ p{
     line-height: 50px;
 }
 
-#hat #shoes{
+.cell{
     cursor: cell;
 }
