@@ -63,6 +63,8 @@ h1{
     width: 100%;
     display: inline-flex;
     vertical-align: center;
+
+    /*background-color: red;*/
 }
 .bubble{
     position: absolute;
@@ -78,16 +80,34 @@ h1{
     height: 30%;
 }
 
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /*background-color: blue;*/
+}
 .text{
-    top: 10vh;
-
+    left: 50%;
+    transform: translateX(-50%);
     position: relative;
+    display: block;
     /*background-image: url("greenGrid.jpg");*/
     background-color: pink;
     padding: 30px;
 
-    width: 30%;
-    height: 100%;
+    width: 75%;
+    height: fit-content;
+}
+.container button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20vw;
 }
 
 p{

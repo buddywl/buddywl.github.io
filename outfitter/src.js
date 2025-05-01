@@ -15,7 +15,7 @@ function next(id, maxClothes){
         }
         cur.src = "../elements/clothes/" + id + "/" + curShirt + ".png"
 
-    } else if (id === 'pant') {
+    } else if (id === 'pants') {
         if (curPants < maxClothes){
             curPants++;
         } else {
@@ -32,7 +32,7 @@ function next(id, maxClothes){
         cur.src = "../elements/clothes/" + id + "/" + curHat + ".png"
 
     } else if (id === 'shoe') {
-        if (curHat < maxClothes){
+        if (curShoes < maxClothes) {
             curShoes++;
         } else {
             curShoes = 1;
@@ -65,6 +65,13 @@ function back(id, maxClothes){
             curHat = maxClothes;
         }
         cur.src = "../elements/clothes/" + id + "/" + curHat + ".png"
+    } else if (id === 'shoe') {
+        if (curShoes > 1) {
+            curShoes--;
+        } else {
+            curShoes = maxClothes;
+        }
+        cur.src = "../elements/clothes/" + id + "/" + curShoes + ".png"
     }
 }
 
