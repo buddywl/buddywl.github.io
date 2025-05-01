@@ -1,7 +1,9 @@
 html{
     overflow-x: hidden;
     overflow-y: auto;
-    cursor: cell
+    cursor: cell;
+
+    margin: 0 auto;
 }
 
 header{
@@ -33,9 +35,24 @@ body {
 button {
     z-index: 20;
     position: relative;
+    margin: 0 auto;
 
     border: none;
     background-color: rgba(255, 255, 255, 0%);
     font-family: "Darumadrop One", monospace;
     cursor: pointer;
+}
+
+
+.footer{
+    position: relative;
+    width: 100%;
+    background-color: pink;
+    padding: 20px;
+
+    bottom: 0;
+}
+
+.footer img{
+    width: 10%;
 }

@@ -57,12 +57,21 @@ h1{
     z-index: 100;
     cursor:pointer;
     padding: 30px;
+    min-width: 700px;
+
+    /*background-color: red;*/
 }
 
 .home {
     width: 100%;
     display: inline-flex;
+    justify-content: flex-start;
+
     vertical-align: center;
+    flex-wrap: wrap;
+
+    /*background-color: blue;*/
+    /*justify-content: flex-start;*/
 
     /*background-color: red;*/
 }
@@ -81,10 +90,11 @@ h1{
 }
 
 .container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    display: block;
+    width: 40%;
     /*background-color: blue;*/
+    margin: auto;
+    /*background-color: hotpink;*/
 }
 .text{
     left: 50%;
@@ -95,7 +105,8 @@ h1{
     background-color: pink;
     padding: 30px;
 
-    width: 75%;
+    width: 80%;
+    min-width: 500px;
     height: fit-content;
 }
 .container button{
