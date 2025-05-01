@@ -4,6 +4,7 @@
 let curShirt = 1;
 let curPants = 1;
 let curHat = 1;
+let curShoes = 1;
 function next(id, maxClothes){
     let cur = document.getElementById(id);
     if (id === 'shirt') {
@@ -14,7 +15,7 @@ function next(id, maxClothes){
         }
         cur.src = "../elements/clothes/" + id + "/" + curShirt + ".png"
 
-    } else if (id === 'pants') {
+    } else if (id === 'pant') {
         if (curPants < maxClothes){
             curPants++;
         } else {
@@ -29,6 +30,14 @@ function next(id, maxClothes){
             curHat = 1;
         }
         cur.src = "../elements/clothes/" + id + "/" + curHat + ".png"
+
+    } else if (id === 'shoe') {
+        if (curHat < maxClothes){
+            curShoes++;
+        } else {
+            curShoes = 1;
+        }
+        cur.src = "../elements/clothes/" + id + "/" + curShoes + ".png"
     }
 }
 
@@ -90,6 +99,9 @@ function back(id, maxClothes){
 
 // Make the DIV element draggable:
 dragElement(document.getElementById("mydiv"));
+dragElement(document.getElementById("shirt1"));
+dragElement(document.getElementById("shirt2"));
+dragElement(document.getElementById("shirt3"));
 
 function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
